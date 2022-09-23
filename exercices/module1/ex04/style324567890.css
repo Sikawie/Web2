@@ -1,0 +1,105 @@
+body{
+    margin-top: 50px;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.color1 {
+    background: red;
+    animation: one 6s infinite;
+}
+
+.color2 {
+    background: orange;
+    animation: two 6s infinite;
+}
+
+.color3 {
+    background: green;
+    animation: three 6s infinite;
+}
+
+@keyframes one {
+    0% {
+        background: red;
+    }
+
+    25% {
+        background: red;
+    }
+
+    26% {
+        background: white;
+    }
+
+    100% {
+        background: white;
+    }
+
+}
+
+@keyframes two {
+    0% {
+        background: white;
+    }
+
+    25% {
+        background: white;
+    }
+
+    26% {
+        background: orange;
+    }
+
+    50% {
+        background: orange;
+    }
+
+    51% {
+        background: white;
+    }
+
+    75% {
+        background: white;
+    }
+
+    76% {
+        background: orange;
+    }
+
+    100% {
+        background: orange;
+    }
+
+}
+
+@keyframes three {
+    0% {
+        background: white;
+    }
+
+    50% {
+        background: white;
+    }
+
+    51% {
+        background: green;
+    }
+
+    75% {
+        background: green;
+    }
+
+    76% {
+        background: white;
+    }
+
+    100% {
+        background: white;
+    }
+}
