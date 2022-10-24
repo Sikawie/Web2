@@ -125,5 +125,8 @@ router.patch('/:id', (req, res) => {
   res.json(updatedPizza);
 });
 
+const updatedPizza = {...MENU[foundIndex], ...req.body};
+
+orderedMenu = [...MENU].sort((a, b) => a.title.localeCompare(b.title));
 
 module.exports = router;
